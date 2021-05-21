@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    letter-spacing: .2rem;
+}
+
+header{
+    background-image: url(../img/Fondo.jpg);
+    background-attachment: fixed;
+}
+
+header nav{
+    padding: 1.8rem;
+    padding-top: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width:calc(100% - 25px);
+    z-index: 100;
+}
+
+header nav img{
+    width: 50px;
+}
+
+
+header nav ul{
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav ul li{
+    display: inline;
+    padding: .1rem 1.5rem;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #E2E2E2;
+    border-bottom: 2px solid rgba(125, 125, 138, 0.664);
+    transition: all 0.2s linear;
+
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header nav ul li a:hover{
+    color: rgb(190, 190, 190);
+    border-bottom: 1px solid rgba(125, 125, 138, 0.664);
+    font-size: 15px;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 175px;
+    color: #E2E2E2;
+}
+
+header div h1{
+    padding: 40px;
+    font-family: cursive,'Gothic A1', sans-serif;
+    font-size: 56px;
+    margin: 0;
+    z-index: 200;
+}
+
+header div h2{
+    padding-bottom: 200px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.Presentation{
+    background-image: url(../img/SobreMi1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+
+.PresentationDiv{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba( 164, 163, 173, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.0px );
+    -webkit-backdrop-filter: blur( 6.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.PresentationDiv img{
+    width: 200px;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.PresentationDiv h2{
+    font-family: cursive, 'Gothic A1', sans-serif;
+    font-size: 44px;
+    color: rgb(231, 222, 222);
+    margin: 0;
+    padding: .5rem;
+}
+
+.PresentationDiv p{
+    width: 500px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: .7rem;
+    z-index: 200;
+    
+    font-family: 'Abhaya Libre', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.Presentation div div{
+    padding: 1rem;
+}
+
+.Presentation div div a{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(0, 105, 217);
+    font-family: 'Segoe UI', 'Times New Roman';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(235, 226, 226);
+    padding: 15px;
+    border-radius: 7px;
+    transition: all 0.2s linear;
+}
+
+.Presentation div div a:hover{
+    background-color: rgb(22, 100, 184);
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(223, 210, 210);
+}
+
+.Proyect{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Proyect.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+.Proyect h2{
+    font-family: cursive, 'Gothic A1', sans-serif;
+    font-size: 44px;
+    color: rgb(248, 244, 244);
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.Proyect div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(400px, auto);
+    padding-bottom: 35px;
+}
+
+.Proyect div container{
+    margin: 1.8rem;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.Proyect div container h3{
+    font-family: cursive, 'Gothic A1', sans-serif;
+    font-size: 20px;
+    margin: 7px;
+    margin-bottom: 10px;
+}
+
+.Proyect div container img{
+    width: 185px;
+    box-sizing: border-box;
+}
+
+.Proyect div container p{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+#Contact{
+    font-family: 'Roboto', sans-serif;
+    background: #614e75;
+}
+
+#Contact article{
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    text-align:center;
+    font-family: cursive, 'Gothic A1', sans-serif;
+    font-size: 44px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+form div{
+    padding: 8px;
+}
+
+form input, form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+form textarea{
+    resize: none;
+    height: 100px;
+}
+
+.Button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background-color: rgb(0, 105, 217);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+button:hover{
+    height: 44px;
+    line-height: 44px;
+    background-color: rgba(0, 105, 217, 0.472);
+    color: rgb(238, 229, 229);
+}
+
+label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    padding: 15px 15px;
+}
